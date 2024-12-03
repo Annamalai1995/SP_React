@@ -37,6 +37,12 @@ export let Tables=()=>
                     <td>SCE</td>
                     <td>Thanjavur</td>
                 </tr>
+                <tr>
+                    <td>505</td>
+                    <td>Gowthami</td>
+                    <td>Sakthikaliash</td>
+                    <td>Salem</td>
+                </tr>
 
             </tbody>
         </table>
