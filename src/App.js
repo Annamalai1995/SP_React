@@ -1,3 +1,4 @@
+import { BootstrapExec } from "./Bootstrap";
 import List, { Unorderlist } from "./Function";
 import { Parameter } from "./Parameter";
 import { Tables } from "./Table";
@@ -12,9 +13,10 @@ function App() {
     <Unorderlist/>
     <Tables/>
     <Hook/> */}
-    <Hook1/>
+    {/* <Hook1/> */}
     {/* <Parameter where="./download.jpg"length="200px" breadth="200px"/> */}
-<Travelsname/>
+{/* <Travelsname/> */}
+<BootstrapExec/>
     </>
         
   )
