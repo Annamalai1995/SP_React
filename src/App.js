@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { BootstrapExec } from "./Bootstrap";
 import List, { Unorderlist } from "./Function";
 import { Parameter } from "./Parameter";
@@ -6,6 +7,7 @@ import { Travelsname } from "./Tablecss";
 import { Ternary } from "./TernaryOperator";
 import { Hook } from "./UseState";
 import { Hook1 } from "./UseState1";
+import { Homepage } from "./WebPage";
 
 function App() {
   return (
@@ -18,7 +20,15 @@ function App() {
     {/* <Parameter where="./download.jpg"length="200px" breadth="200px"/> */}
 {/* <Travelsname/> */}
 {/* <BootstrapExec/> */}
-<Ternary/>
+{/* <Ternary/> */}
+<BrowserRouter>
+<Homepage/>
+<Routes>
+  <Route path="Read" exact element={<Tables/>}/>
+  <Route path="create" exact element={<Travelsname/>}/>
+</Routes>
+</BrowserRouter>
+{/* <Homepage/> */}
     </>
         
   )
