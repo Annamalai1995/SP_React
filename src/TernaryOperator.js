@@ -1,37 +1,40 @@
+import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useState } from 'react'
+
 export let Ternary=()=>
 {
-    const[wish,setWish]=useState("summa");
-    const [result,setResult]=useState("");
-    const[change,setChange]=useState({color:'red',backgroundcolor:'black'});
-    const getting=(temp)=>
+    const[wish,setWish]=useState("summaa");
+    const[result,setResult]=useState("");
+    const[changes,setChanges]=useState({color:'red',backgroundColor:'balck'})
+    const getingvalues=(temp)=>
     {
         setWish(temp.target.value)
     }
-    const ternaryoperator=()=>
-    {
-        (wish=='java')?
-        setChange({color:'green',backgroundcolor:'black'}):
-        (wish=='python')?
-        setChange({color:'pink',backgroundcolor:'black'}):
 
+    const ternaryopertor=()=>
+    {
+       (wish=='java') ?
+        setChanges({color:'green',backgroundColor:'black'}):
+ 
+        (wish=='python')?
+        setChanges({color:'red',backgroundColor:'black'}):
 
         (wish=='spring')?
-        setChange({color:'blue',backgroundcolor:'black'}):
+        setChanges({color:'blue',backgroundColor:'black'}):
+
+        setChanges({color:'pink',backgroundColor:'black'})
 
         setResult(wish);
-
     }
+
+
     return(
         <>
-        <input placeholder='Enter fav programming lanugage'className='form-control'onChange={getting}/>
-        <button className='btn btn-outline-success'onClick={ternaryoperator}>Check The Lang</button>
-        <p style={change}>
+        <input placeholder="enter fav programming lang" className="form-control" onChange={getingvalues} />
+        <button className="btn btn-outline-dark fw-bold" onClick={ternaryopertor}>Check The Language</button>
+        <p style={changes}>
             {result}
-
         </p>
-       
         </>
-    )
+    );
 }
