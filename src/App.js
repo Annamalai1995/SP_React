@@ -16,19 +16,20 @@ function App() {
     <Unorderlist/>
     <Tables/>
     <Hook/> */}
-    {/* <Hook1/> */}
-    {/* <Parameter where="./download.jpg"length="200px" breadth="200px"/> */}
-{/* <Travelsname/> */}
-{/* <BootstrapExec/> */}
-{/* <Ternary/> */}
-<BrowserRouter>
+    {/* <Hook1/>
+    <Parameter where="./download.jpg"length="200px" breadth="200px"/>
+<Travelsname/>
+<BootstrapExec/>
+<Ternary/> */}
+{/* <BrowserRouter>
 <Homepage/>
 <Routes>
   <Route path="Read" exact element={<Tables/>}/>
   <Route path="create" exact element={<Travelsname/>}/>
 </Routes>
-</BrowserRouter>
+</BrowserRouter> */}
 {/* <Homepage/> */}
+{/* <List/> */}
     </>
         
   )
