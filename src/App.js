@@ -8,6 +8,7 @@ import { Ternary } from "./TernaryOperator";
 import { Hook } from "./UseState";
 import { Hook1 } from "./UseState1";
 import { Homepage } from "./WebPage";
+import { RegistrationForm } from "./EmployeeRegistration";
 
 function App() {
   return (
@@ -15,12 +16,12 @@ function App() {
     {/* <List/>
     <Unorderlist/>
     <Tables/>
-    <Hook/> */}
-    {/* <Hook1/>
-    <Parameter where="./download.jpg"length="200px" breadth="200px"/>
+    <Hook/>
+    {/* <Hook1/> */}
+    {/* <Parameter where="./download.jpg"length="200px" breadth="200px"/>
 <Travelsname/>
 <BootstrapExec/>
-<Ternary/> */}
+<Ternary/> */} 
 {/* <BrowserRouter>
 <Homepage/>
 <Routes>
@@ -29,7 +30,8 @@ function App() {
 </Routes>
 </BrowserRouter> */}
 {/* <Homepage/> */}
-{/* <List/> */}
+{/* <List/>  */}
+<RegistrationForm/>
     </>
         
   )
