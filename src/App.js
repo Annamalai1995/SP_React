@@ -9,6 +9,7 @@ import { Hook } from "./UseState";
 import { Hook1 } from "./UseState1";
 import { Homepage } from "./WebPage";
 import { RegistrationForm } from "./EmployeeRegistration";
+import { ReadingaEmployeedetails } from "./Read";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
 </BrowserRouter> */}
 {/* <Homepage/> */}
 {/* <List/>  */}
-<RegistrationForm/>
+{/* <RegistrationForm/> */}
+<ReadingaEmployeedetails/>
     </>
         
   )
