@@ -10,6 +10,7 @@ import { Hook1 } from "./UseState1";
 import { Homepage } from "./WebPage";
 import { RegistrationForm } from "./EmployeeRegistration";
 import { ReadingaEmployeedetails } from "./Read";
+import { Mainpage } from "./Homepage";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
 {/* <Homepage/> */}
 {/* <List/>  */}
 {/* <RegistrationForm/> */}
-<ReadingaEmployeedetails/>
+{/* <ReadingaEmployeedetails/> */}
+<Mainpage/>
     </>
         
   )

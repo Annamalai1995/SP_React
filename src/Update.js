@@ -1,19 +1,18 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { useState } from 'react'
-import { create } from './TemporyValues'
+import { useState } from "react"
+import { alteration } from "./TemporyValues";
 
-export const RegistrationForm=()=>
-    
+export const Updating=(Name)=>
 {
-    // Spread Operator(...)
+    const[pos,setpos]=useState(Name.who);
+
     const[userdetail,setUserdetail]=useState({
-        "empid":0,
-        "empname":"",
-        "empusername":"",
-        "emppassword":"",
-        "empdesignation":"",
-        "empexp":0,
-        "empsalary":0
+        "empid":Name.mention.empid,
+        "empname":Name.mention.empname,
+        "empusername":Name.mention.empusername,
+        "emppassword":Name.mention.emppassword,
+        "empdesignation":Name.mention.empdesignation,
+        "empexp":Name.mention.empexp,
+        "empsalary":Name.mention.empsalary  
     })
 
     const tracking=(mydatas)=>
@@ -32,7 +31,9 @@ export const RegistrationForm=()=>
     const Register=()=>
     {
         alert(" welcome to zealous Tech corp"+JSON.stringify(userdetail))
-        create(userdetail);
+        // create(userdetail);
+        alteration(userdetail,pos)
+        alert('updated successfully')
     }
 
     const Cancel=()=>
@@ -65,7 +66,8 @@ export const RegistrationForm=()=>
                     </div>
                     <div className='mt-3'>
                         <label className='fw-bold'>Employee Username</label>
-                        <input className='form-control' 
+                        <input 
+                        className='form-control' 
                         name='empusername' 
                         placeholder='enter your valid name'
                         onChange={tracking}
@@ -130,4 +132,5 @@ export const RegistrationForm=()=>
         </div>
         </>
     )
+
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import { read } from "./TemporyValues"
 
-export const ReadingaEmployeedetails=()=>
+export const ReadingaEmployeedetails=(position)=>
 {
   
     const[userdetail,setUserdetail]=useState({
@@ -24,7 +25,7 @@ useEffect(()=>
 return(
     <>
     <div className="container text-center mt-5">
-        <div className="row-justify-content-center">
+        <div className="row justify-content-center">
             <div className="bg-success text-light fw-bold col-lg-8 col-md-10 col-sm-12">
                 <h1>HE/SHE(Employee Name) {userdetail.empname}</h1>
                 <ul typeof="square">
